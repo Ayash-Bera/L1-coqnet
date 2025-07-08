@@ -4,7 +4,7 @@ function App() {
   const [backendStatus, setBackendStatus] = useState('Checking...')
 
   useEffect(() => {
-    fetch('http://localhost:3001/api/health')
+    fetch('http://localhost:3001/')
       .then(res => res.json())
       .then(data => setBackendStatus(data.message))
       .catch(() => setBackendStatus('Backend not connected'))
