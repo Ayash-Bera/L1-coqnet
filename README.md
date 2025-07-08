@@ -4,9 +4,19 @@
 
 live link :
 
-img 1 here 
+## backend runs 
+![image](https://github.com/user-attachments/assets/8b4de711-78ff-4d05-9d60-39f35df13dda)
+
 
 ## ⚡ Quick Start
+
+## 🛠️ Tech Stack
+- **Frontend:** React + TypeScript + Vite + Tailwind CSS + Recharts
+- **Backend:** Node.js + Express + TypeScript + SQLite
+- **Background Jobs:** node-cron
+- **HTTP Client:** Axios
+
+# no need for env setup the api is set in the code using ```||```  
 
 ### Backend Setup
 ```bash
@@ -26,8 +36,13 @@ npm run dev  # Runs on http://localhost:5173
 - Backend: http://localhost:3001
 - Frontend: http://localhost:5173
 
-![Setup Complete](./screenshots/setup.png)
-<!-- TODO: Add screenshot of both services running -->
+## frontend looks meh but i kept it useable and responsive it has all the info needed 
+
+![image](https://github.com/user-attachments/assets/2059ba58-9858-4258-a6b0-775045a7b979)
+
+![image](https://github.com/user-attachments/assets/8e335dd1-de0c-455a-87a4-ed3f8333071e)
+
+
 
 ## 📡 API Endpoints
 
@@ -75,4 +90,12 @@ curl "http://localhost:3001/api/blocks/stats"
 - **🗄️ Database Management** - Smart cleanup (keep latest N blocks, delete old data), optimization, and export tools 
 - **🔄 Auto-refresh** - Live updates every 30 seconds without manual intervention
 - **📱 Responsive Design** - Works on desktop, tablet, and mobile devices
+
+## ⚙️ How It Works
+
+The Coqnet Explorer automatically fetches the latest block data from the Coqnet blockchain API every 30 seconds using a background cron job. Each new block is stored in a local SQLite database with details like block number, timestamp, transaction count, and gas usage. The React dashboard connects to the backend API to display real-time statistics, interactive charts, and a table of recent blocks. Users can control the collector (start/stop/trigger), manage the database (cleanup old blocks, optimize performance), and view live analytics - all updating automatically without manual refresh.
+
+**Flow:** `Coqnet API` → `Background Collector` → `SQLite Database` → `REST API` → `React Dashboard`
+
+
 
