@@ -63,7 +63,7 @@ export interface ApiError {
     message: string;
 }
 
-const API_BASE_URL = import.meta.env.VITE_API_URL || 'http://localhost:3001';
+const API_BASE_URL = import.meta.env.VITE_API_URL || 'http://localhost:8080';
 
 const apiClient = axios.create({
     baseURL: API_BASE_URL,
