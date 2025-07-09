@@ -1,8 +1,12 @@
-## some values are hardcoded so that its easier for you to run i also made sure it runs using the env and i kept an example .env file
+## some values are hardcoded so that its easier for you to run i also made sure it runs using the env and i kept an example .env file if you need to run it locally 
 
 ## will host tommorow morning and update the readme with the live link its late now but i wanted to get it working 
 
-live link :
+
+## System Architecture
+
+**Backend API:** http://34.58.121.43:8080/  
+**Frontend Application:** http://34.58.121.43:3000/
 
 ## backend runs 
 ![image](https://github.com/user-attachments/assets/8b4de711-78ff-4d05-9d60-39f35df13dda)
@@ -31,10 +35,6 @@ cd frontend
 npm install
 npm run dev  # Runs on http://localhost:5173
 ```
-
-### Verify Setup
-- Backend: http://localhost:3001
-- Frontend: http://localhost:5173
 
 ## frontend looks meh but i kept it useable and responsive it has all the info needed 
 
@@ -65,7 +65,7 @@ npm run dev  # Runs on http://localhost:5173
 
 **Example API Call:**
 ```bash
-curl "http://localhost:3001/api/blocks/stats"
+curl http://34.58.121.43:8080/api/blocks/stats
 ```
 
 **Response:**
