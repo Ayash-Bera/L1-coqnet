@@ -1,8 +1,5 @@
 ## some values are hardcoded so that its easier for you to run i also made sure it runs using the env and i kept an example .env file if you need to run it locally 
 
-## will host tommorow morning and update the readme with the live link its late now but i wanted to get it working 
-
-
 ## System Architecture
 
 **Backend API:** http://34.58.121.43:8080/  
