@@ -23,14 +23,14 @@
 ```bash
 cd backend
 npm install
-npm run dev  # Runs on http://localhost:3001
+npm run dev  # Runs on http://localhost:8080
 ```
 
 ### Frontend Setup  
 ```bash
 cd frontend
 npm install
-npm run dev  # Runs on http://localhost:5173
+npm run dev  # Runs on http://localhost:3000
 ```
 
 ## frontend looks meh but i kept it useable and responsive it has all the info needed 
